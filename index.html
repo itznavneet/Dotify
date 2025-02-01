@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-300">
+  <nav class="bg-black text-white p-5 text-3xl font-bold text-center">DOTIFY</nav>
+  <div class="songslist ">
+    <div class="songItem flex my-5  sm:mx-16 mx-5 gap gap-5 border-2 rounded-3xl p-4">
+        <div class="cover"><img src="covers/1.jpg" alt="" class="h-10"></div>
+        <div class="songName">One Love</div>
+        <div class="eachicon"> <img src="play.svg" alt="" class="invert-100 cursor-pointer" id="eachicon"></div>
+    </div>
+    <div class="songItem flex my-5  sm:mx-16 mx-5 gap gap-5 border-2 rounded-3xl p-4">
+        <div class="cover"><img src="covers/1.jpg" alt="" class="h-10"></div>
+        <div class="songName">Kaayi</div>
+        <div class="eachicon"> <img src="play.svg" alt="" class="invert-100 cursor-pointer" id="eachicon"></div>
+    </div>
+    <div class="songItem flex my-5  sm:mx-16 mx-5 gap gap-5 border-2 rounded-3xl p-4">
+        <div class="cover"><img src="covers/1.jpg" alt="" class="h-10"></div>
+        <div class="songName">Daylight</div>
+        <div class="eachicon"> <img src="play.svg" alt="" class="invert-100 cursor-pointer" id="eachicon"></div>
+    </div>
+    <div class="songItem flex my-5  sm:mx-16 mx-5 gap gap-5 border-2 rounded-3xl p-4">
+        <div class="cover"><img src="covers/1.jpg" alt="" class="h-10"></div>
+        <div class="songName">Nee Singham Dhan</div>
+        <div class="eachicon"> <img src="play.svg" alt="" class="invert-100 cursor-pointer" id="eachicon"></div>
+    </div>
+  </div>
+  <footer class="bg-black fixed bottom-0 w-full flex flex-col justify-center items-center py-3 gap-5">
+    <div id="currentSongName" class="text-lg font-bold text-white"></div>
+    <!-- Icons Section -->
+    <div class="controlicons flex space-x-4">
+      <img src="prevsong.svg" alt="Previous Song" class="w-8 h-8 cursor-pointer" id="prevSong">
+      <img src="play.svg" alt="Play" class="w-8 h-8 cursor-pointer" id="mainplay">
+      <img src="nextsong.svg" alt="Next Song" class="w-8 h-8 cursor-pointer" id="nextSong">
+    </div>
+  
+    <!-- Seekbar Section -->
+    <input
+      type="range"
+      name="range"
+      id="myProgressBar"
+      min="0"
+      value="0"
+      max="100"
+      class="w-[80vw] h-2 py-3 cursor-pointer"
+    >
+  </footer>
+  
+  <!-- Audio Element -->
+  <audio id="audioPlayer" src=""></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>
